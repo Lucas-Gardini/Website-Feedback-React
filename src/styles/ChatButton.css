@@ -1,0 +1,55 @@
+.chat-button {
+	transition: 0.5s all;
+	position: fixed;
+	bottom: 35px;
+	right: 50px;
+	border-radius: 50px;
+	background-color: #8257e5;
+	color: #fff;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	cursor: pointer;
+
+	box-shadow: inset 0 0 30px #8257e5, inset 20px 0 30px #8257e5, inset -20px 0 30px #8257e5, inset 20px 0 30px #8257e5, inset -20px 0 30px #8257e5,
+		0 0 10px #8257e5, -10px 0 20px #8257e5, 10px 0 20px #8257e5;
+}
+
+.chat-button.max30 {
+	transition: 0.5s all;
+	max-width: 30px;
+}
+
+.chat-button div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.chat-button div .icon-absolute {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.chat-button div .icon-normal {
+	/* transition: 1s all; */
+	position: relative;
+}
+
+.chat-button div .text-inactive {
+	transition: 0.3s;
+	opacity: 0;
+	/* display: none; */
+}
+
+.chat-button div .text-active {
+	transition: 0.3s;
+	opacity: 1;
+}
